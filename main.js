@@ -11,6 +11,13 @@ document.addEventListener("mousemove", (e) => {
   let mouseX = e.clientX;
   let mouseY = e.clientY;
 
-  square.style.transform = `translate(calc(${mouseX}px - 100px), calc(${mouseY}px - 100px))`
+  square.style.transform = `translate(calc(${mouseX}px - 150px), calc(${mouseY}px - 150px))`
+  gulMotor.style.transform = `translate(calc(${mouseX}px - 50px), calc(${mouseY}px - 50px))`
+})
+document.addEventListener("touchmove", (e) => {
+  let mouseX = e.touches[0].clientX;
+  let mouseY = e.touches[0].clientY;
+
+  square.style.transform = `translate(calc(${mouseX}px - 150px), calc(${mouseY}px - 150px))`
   gulMotor.style.transform = `translate(calc(${mouseX}px - 50px), calc(${mouseY}px - 50px))`
 })
