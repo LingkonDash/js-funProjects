@@ -6,6 +6,7 @@
   border-radius: 100%;
   transition: 100ms;
   transform: translate(-150px , -150px);
+  z-index: -11;
 }
 .motor {
   position: absolute;
@@ -14,4 +15,27 @@
   background-color: #DA291C;
   border-radius: 100%;
   transform: translate(-50px , -50px);
+  z-index: -10;
+}
+
+.dark-mode {
+  background-color: black;
+}
+.light-mode {
+  background-color: white;
+}
+
+#left {
+  width: 50vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+}
+#right {
+  width: 50vw;
+  height: 100vh;
+  position: absolute;
+  right: 0;
+  top: 0;
 }
